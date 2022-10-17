@@ -29,11 +29,11 @@ void multiplyMatrix(int[,] matrix1, int[,] matrix2)
 {
     int[,] resultMatrix = new int[matrix1.GetLength(0), matrix2.GetLength(1)];
 
-    for (int i = 0; i < matrix1.GetLength(0); i++)  // 2 цикла (это будут строки итоговой матрицы)
+    for (int i = 0; i < matrix1.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix2.GetLength(1); j++)  //2 цикла (это будут столбцы итоговой матрицы)
+        for (int j = 0; j < matrix2.GetLength(1); j++)
         {
-            for (int k = 0; k < matrix2.GetLength(0); k++)  //3 цикла (для * элементов матрицы / и их сложения)
+            for (int k = 0; k < matrix2.GetLength(0); k++)
             {
                 resultMatrix[i, j] += matrix1[i, k] * matrix2[k, j];
             }
